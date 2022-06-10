@@ -20,6 +20,9 @@
     <ClCompile Include="src\pimpl.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\internal_data.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pattern.h">

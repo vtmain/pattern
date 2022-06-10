@@ -1,4 +1,5 @@
 ﻿#include "pimpl.h"
+#include "internal_data.h"
 
 class Pimpl::InternalClass
 {
@@ -13,6 +14,14 @@ public:
 void Pimpl::InternalClass::print_func()
 {
 	std::cout << "internal class print." << std::endl;
+
+	// 测试改动，观察重编译了哪些文件
+	//std::cout << "internal class another print." << std::endl;
+}
+
+Pimpl::Pimpl()
+{
+	pdata = new InternalData();
 }
 
 Pimpl::~Pimpl()
