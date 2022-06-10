@@ -14,6 +14,10 @@
 // 头文件放在cpp中包含，这里只声明一下
 //#include "internal_data.h"  
 class InternalData;
+//class InternalData2;
+
+// 使用 InternalData2 data2 声明类型时，就必须在此处包含头文件了，否则会报错：不允许使用不完整的类型
+//#include "internal_data.h"
 
 class Pimpl
 {
@@ -24,6 +28,7 @@ public:
 public:
 	void print_internal_class();
 	void print_internal_data();
+	void print_internal_data2();
 
 private:
 
@@ -40,4 +45,7 @@ private:
 	// 1. 当定义 new Pimpl 或 Pimpl p1 时，编译器生成的代码中不会掺杂InternalData的信息
 	// 2. 当使用Pimpl对象时，与InternalData无关，InternalData被通过指针封装彻底的与实现分离
 	InternalData* pdata;
+
+	// 用声明的方式做对比测试
+	//InternalData2 data2;
 };

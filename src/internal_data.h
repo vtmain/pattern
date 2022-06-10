@@ -13,3 +13,13 @@ public:
 	void print_func();
 };
 
+class InternalData2
+{
+public:
+	InternalData2() {}
+	~InternalData2() {}
+
+public:
+	void print_func();
+};
+

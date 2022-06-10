@@ -41,3 +41,8 @@ void Pimpl::print_internal_data()
 {
 	pdata->print_func();
 }
+
+void Pimpl::print_internal_data2()
+{
+	//data2.print_func();
+}
