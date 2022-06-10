@@ -1,0 +1,7 @@
+pat
+/.vs
+/*.vcxproj
+/*.user
+/*.swp
+/x64/*
+**/*.o
