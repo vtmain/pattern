@@ -2,6 +2,10 @@
 *  FileName:	pimpl
 *  Description:	私有化实现 PIMPL（Private Implementation 或 Pointer to Implementation）
 *               通过一个私有的成员指针，将指针所指向的类的内部实现数据进行隐藏
+*               优点：
+*                 1.保护核心数据和实现原理
+*                 2.降低编译依赖，提高编译速度
+*                 3.接口与实现分离
 *  Author:		phil
 *  Date:		2022-04-12
 *  Version:
